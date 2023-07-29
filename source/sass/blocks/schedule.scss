@@ -1,0 +1,182 @@
+.schedule {
+  padding: 6.5rem 0 15rem;
+
+  &__section {
+    padding: 6.5rem 0 0;
+    border-top: 1px solid $red;
+
+    &:not(:last-child) {
+      padding-bottom: 7rem;
+    }
+  }
+
+  &__title {
+    margin: 0 0 4.7rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__content {
+    background-color: $lightblue;
+    padding: 4rem 3.5rem 1.5rem 4rem;
+    width: 48rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    flex-shrink: 0;
+
+    &--small-pad {
+      padding: 4rem 1.4rem 1.5rem 4rem;
+    }
+
+    &--orange {
+      background-color: $pastel;
+    }
+  }
+
+  &__description {
+    margin: 0 0 2.5rem;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 0 0 2rem;
+      }
+
+    }
+  }
+
+  &__points {
+    margin: 0 0 1.9rem;
+  }
+
+  &__point {
+    margin: 0 0 1.3rem;
+    b {
+      color: $red;
+    }
+  }
+
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+  }
+
+  &__member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11.8rem;
+
+    &--half {
+      width: 15.3rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 11.8rem;
+    height: 11.8rem;
+    object-fit: cover;
+    margin: 0 0 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  &__member-name {
+    font-size: 2rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-family: $mossport;
+    color: $red;
+    text-align: center;
+  }
+
+  &__schedule {
+    flex-grow: 1;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    background-color: $lightGrey;
+    padding: 1.4rem 1.6rem;
+    border-radius: 20px;
+
+    .button--small-font {
+      flex-grow: 2;
+      max-width: 26rem;
+      min-width: 26rem;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__item-text {
+    flex-grow: 1;
+    height: 100%;
+    margin: 0 1.5rem 0 0;
+
+    p {
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 0 0 0.6rem;
+    }
+
+    span {
+      font-size: 1.3rem;
+      display: block;
+      color: $red;
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    flex-grow: 0;
+  }
+
+  &__item-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey;
+    width: 6.7rem;
+    height: 6.7rem;
+    border-radius: 12px;
+    flex-shrink: 0;
+    margin: 0 1.7rem 0 0;
+    font-weight: 700;
+
+    span {
+      display: block;
+      font-size: 2.8rem;
+      line-height: 1.1;
+
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+  }
+
+
+
+}

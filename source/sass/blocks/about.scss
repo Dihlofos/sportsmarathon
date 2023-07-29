@@ -1,0 +1,36 @@
+.about {
+  padding: 14.5rem 0 8rem;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__image {
+    position: relative;
+    flex-shrink: 0;
+    margin-left: -23.5rem;
+    margin-top: -1.6rem;
+    z-index: 4;
+  }
+
+  &__content {
+    position: relative;
+    flex-shrink: 0;
+    z-index: 5;
+  }
+
+  &__title {
+    max-width: 86.7rem;
+   margin: 0 0 5.5rem;
+  }
+
+  &__text {
+    max-width: 59.9rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    p {
+      margin: 0 0 2.5rem;
+    }
+
+  }
+
+}

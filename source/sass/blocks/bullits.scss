@@ -1,0 +1,48 @@
+.bullits {
+  padding: 7rem 0 7.5rem;
+
+  &__list {
+    padding: 10.9rem 0 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  &__image {
+    margin: -10.9rem 0 3rem;
+  }
+
+  &__item {
+    padding: 0 5.5rem 6.1rem;
+    width: 33.3333%;
+    background-color: $pastel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    &:last-child {
+      .bullits__text {
+        max-width: 22.5rem;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $gold;
+    font-family: $mossport;
+    margin: 0 0 1.9rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+}
