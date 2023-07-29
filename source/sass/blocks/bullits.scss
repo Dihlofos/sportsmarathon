@@ -1,6 +1,10 @@
 .bullits {
   padding: 7rem 0 7.5rem;
 
+  @media (max-width: $tablet) {
+    padding: 30px 0 50px;
+  }
+
   &__list {
     padding: 10.9rem 0 0;
     margin: 0;
@@ -38,11 +42,19 @@
     color: $gold;
     font-family: $mossport;
     margin: 0 0 1.9rem;
+
+    @media (max-width: $tablet) {
+      font-size: 24px;
+    }
   }
 
   &__text {
     font-size: 1.6rem;
     line-height: 1.4;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
   }
 
 }

@@ -41,6 +41,10 @@
   }
 
   &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+
     &--mobile {
       display: none;
 

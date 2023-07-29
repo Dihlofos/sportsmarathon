@@ -11,6 +11,10 @@
     font-size: 1.6rem;
     line-height: 1.4;
     margin: 0 0 3rem;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
   }
 
 

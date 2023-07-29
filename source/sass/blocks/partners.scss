@@ -1,6 +1,10 @@
 .partners {
   padding: 6rem 0 8rem;
 
+  @media (max-width: $tablet) {
+    padding: 40px 0 30px;
+  }
+
   &__title {
     margin: 0 0 5rem;
   }
@@ -8,4 +12,19 @@
   .slider .swiper__control {
     padding: 4rem 0 0;
   }
+
+  @media (max-width: $tablet) {
+
+    .slider .swiper__prev {
+      left: 5px;
+    }
+
+    .slider .swiper__next {
+      right: 5px;
+    }
+
+
+  }
+
+
 }

@@ -54,20 +54,13 @@
     <div style="overflow: hidden">
       <main style="overflow: hidden">
         <nav class="nav nav--mobile js-nav">
-          <button class="nav__mobile-toggler js-nav-toggler">
-            <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="33" height="2" fill="#EE2C3C"/>
-              <rect y="10" width="33" height="2" fill="#EE2C3C"/>
-              <rect y="20" width="33" height="2" fill="#EE2C3C"/>
-            </svg>
-          </button>
+          <div class="nav__bg js-nav-close"></div>
           <div class="nav__wrapper">
             <button class="nav__close js-nav-close ">
-              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.41406" y="0.000244141" width="33" height="2" transform="rotate(45 1.41406 0.000244141)" fill="white"/>
-                <rect x="1.41406" y="0.000244141" width="33" height="2" transform="rotate(45 1.41406 0.000244141)" fill="white"/>
-                <rect x="24.7485" y="1.41431" width="33" height="2" transform="rotate(135 24.7485 1.41431)" fill="white"/>
-                <rect x="24.7485" y="1.41431" width="33" height="2" transform="rotate(135 24.7485 1.41431)" fill="white"/>
+              <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31 15L15 31" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 15L31 31" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="1" y="1" width="44" height="44" rx="9" stroke="white" stroke-width="2"/>
               </svg>
             </button>
             <ul class="nav__list">
@@ -110,6 +103,14 @@
         >
           <div class="header__container container">
             <div class="header__content">
+              <button class="nav__mobile-toggler js-nav-toggler">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 23H35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 15H35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 31H35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="1" y="1" width="44" height="44" rx="9" stroke="white" stroke-width="2"/>
+                </svg>
+              </button>
               <div class="header__logos">
                   <a href="#"><img src="img/logos/dep.svg" width="100" height="34" /></a>
                   <a href="#"><img src="img/logos/mossport.svg" width="100" height="30"/></a>
@@ -162,6 +163,17 @@
             <div class="hero__wrapper">
               <h1 class="hero__title">МОСКОВСКИЙ МАРАФОН ТРЕНИРОВОК</h1>
               <div class="hero__content">
+                <div class="hero__mobile-logos">
+                  <a href="#">
+                    <img src="img/logos/dep.svg" width="100" height="34" />
+                  </a>
+                  <a href="#">
+                    <img src="img/logos/hundred.svg" width="229" height="64" />
+                  </a>
+                  <a href="#">
+                    <img src="img/logos/mossport.svg" width="100" height="30" />
+                  </a>
+                </div>
                 <a class="hero__hundred" href="#">
                   <img src="img/logos/hundred.svg" width="229" height="64" />
                 </a>
@@ -641,15 +653,15 @@
 
           <div class="slider">
             <div class="swiper__nav js-nav">
-              <button class="swiper__control swiper__prev">
+              <button class="swiper__control swiper__prev music">
                 <img src="img/arrow-left.svg" alt="" width="29" height="29" >
               </button>
-              <button class="swiper__control swiper__next">
+              <button class="swiper__control swiper__next music">
                 <img src="img/arrow-right.svg" alt="" width="29" height="29" >
               </button>
             </div>
             <div class="container">
-              <div class="swiper-container js-slider">
+              <div class="swiper-container js-slider-music">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide js-slide slider__slide">
                     <div class="slider__slide-inner">
@@ -709,15 +721,15 @@
 
           <div class="slider">
             <div class="swiper__nav js-nav">
-              <button class="swiper__control swiper__prev">
+              <button class="swiper__control swiper__prev stars">
                 <img src="img/arrow-left.svg" alt="" width="29" height="29" >
               </button>
-              <button class="swiper__control swiper__next">
+              <button class="swiper__control swiper__next stars">
                 <img src="img/arrow-right.svg" alt="" width="29" height="29" >
               </button>
             </div>
             <div class="container">
-              <div class="swiper-container js-slider">
+              <div class="swiper-container js-slider-stars">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide js-slide slider__slide">
                     <div class="slider__slide-inner">

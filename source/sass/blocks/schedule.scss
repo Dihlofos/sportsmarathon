@@ -1,6 +1,10 @@
 .schedule {
   padding: 6.5rem 0 15rem;
 
+  @media (max-width: $tablet) {
+    padding: 50px 0 80px;
+  }
+
   &__section {
     padding: 6.5rem 0 0;
     border-top: 1px solid $red;
