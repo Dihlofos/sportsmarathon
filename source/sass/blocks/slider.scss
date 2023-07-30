@@ -30,6 +30,13 @@
       overflow: hidden;
     }
 
+    &__partner-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
     &__slide-inner-partner {
       display: flex;
       align-items: center;
@@ -37,6 +44,10 @@
       border: 1px solid $gold;
       height: 12.4rem;
       padding: 1.5rem;
+
+      img {
+        max-height: 100%;
+      }
     }
 
     &__slide-inner {

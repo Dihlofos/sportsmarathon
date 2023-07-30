@@ -48,9 +48,14 @@
     align-items: center;
     justify-content: center;
     padding: 29px;
+    height: 121px;
 
     &:not(:last-child) {
       margin: 0 0 10px
+    }
+
+    img {
+      max-height:100%;
     }
 
 
