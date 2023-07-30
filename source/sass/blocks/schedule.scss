@@ -143,10 +143,10 @@
     }
 
     @media (max-width: $mobile) {
-      width: 60px;
+      width: 115px;
 
       &--half {
-        width: 60px;
+        width: 115px;
       }
     }
   }
@@ -182,7 +182,7 @@
     text-align: center;
 
     @media (max-width: $mobile) {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 
