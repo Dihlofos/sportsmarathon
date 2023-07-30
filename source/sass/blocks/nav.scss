@@ -23,6 +23,8 @@
     top: 27px;
     right: 18px;
     z-index: 5;
+    padding: 0;
+
 
     @media (max-width: $tablet) {
       display: block;
@@ -37,7 +39,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 70%;
+      width: 64%;
       height: 100%;
       background-color: $red;
       padding: 103px 43px 27px 16px;
@@ -87,14 +89,14 @@
     @media (max-width: $tablet) {
       margin: 0;
       flex-direction: column;
-      gap: 25px;
+      gap: 32px;
     }
   }
 
   &__close {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 15px;
+    left: 10px;
     background: none;
     border: none;
   }

@@ -5,13 +5,23 @@
     padding: 40px 0 30px;
   }
 
+  @media (max-width: $mobile) {
+    padding: 40px 0 15px;
+  }
+
   &__title {
     margin: 0 0 5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 18px;
+    }
   }
 
   .slider .swiper__control {
     padding: 4rem 0 0;
   }
+
+
 
   @media (max-width: $tablet) {
 
@@ -22,9 +32,35 @@
     .slider .swiper__next {
       right: 5px;
     }
+  }
+
+  &__mobile-list {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__mobile-item {
+    border: 1px solid $gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px;
+
+    &:not(:last-child) {
+      margin: 0 0 10px
+    }
 
 
   }
 
+  &__slider {
+    display: block;
 
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
 }

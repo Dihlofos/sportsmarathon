@@ -10,6 +10,12 @@
 
   @media (max-width: $tablet) {
     height: 78px;
+
+  }
+
+  @media (max-width: $mobile) {
+    background-color: $darkRed;
+    box-shadow: none;
   }
 
   .container {

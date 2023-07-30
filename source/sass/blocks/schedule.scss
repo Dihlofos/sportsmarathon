@@ -12,15 +12,40 @@
     &:not(:last-child) {
       padding-bottom: 7rem;
     }
+
+    @media (max-width: $mobile) {
+      padding: 17px 0 20px;
+
+      &:not(:last-child) {
+        padding-bottom: 19px;
+      }
+    }
   }
 
   &__title {
     margin: 0 0 4.7rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__subtitle {
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3px;
+    }
+
   }
 
   &__wrapper {
     display: flex;
     gap: 2rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__content {
@@ -38,6 +63,17 @@
     &--orange {
       background-color: $pastel;
     }
+
+    @media (max-width: $mobile) {
+      padding: 20px 20px 28px;
+      font-size: 14px;
+      line-height: 1.2;
+      width: 100%;
+
+      &--small-pad {
+        padding: 20px 20px 28px;
+      }
+    }
   }
 
   &__description {
@@ -51,16 +87,35 @@
       }
 
     }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 20px;
+      p {
+        &:not(:last-child) {
+          margin: 0 0 20px;
+        }
+      }
+    }
   }
 
   &__points {
     margin: 0 0 1.9rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 35px;
+    }
   }
 
   &__point {
     margin: 0 0 1.3rem;
+
+
     b {
       color: $red;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 13px;
     }
   }
 
@@ -68,6 +123,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2.2rem;
+
+    @media (max-width: $mobile) {
+      justify-content: center;
+      align-items: flex-start;
+      gap: 35px;
+    }
   }
 
   &__member {
@@ -80,6 +141,14 @@
     &--half {
       width: 15.3rem;
     }
+
+    @media (max-width: $mobile) {
+      width: 60px;
+
+      &--half {
+        width: 60px;
+      }
+    }
   }
 
   &__image {
@@ -91,6 +160,11 @@
     height: 11.8rem;
     object-fit: cover;
     margin: 0 0 1rem;
+
+    @media (max-width: $mobile) {
+      width: 60px;
+      height: 60px;
+    }
 
     img {
       width: 100%;
@@ -106,6 +180,10 @@
     font-family: $mossport;
     color: $red;
     text-align: center;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
   }
 
   &__schedule {
@@ -119,15 +197,38 @@
     padding: 1.4rem 1.6rem;
     border-radius: 20px;
 
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 17px 18px;
+
+      .button {
+        margin: 8px 0 0;
+        width: 100%;
+      }
+
+      &:not(:last-child) {
+        margin: 0 0 15px;
+      }
+
+    }
+
     .button--small-font {
       flex-grow: 2;
       max-width: 26rem;
       min-width: 26rem;
+
+      @media (max-width: $mobile) {
+        max-width: 100%;
+        min-width: 100%;
+      }
     }
 
     &:not(:last-child) {
-      margin: 0 0 15px;
+      margin: 0 0 1.5rem;
     }
+
+
   }
 
   &__item-text {
@@ -146,6 +247,24 @@
       display: block;
       color: $red;
       font-weight: 700;
+    }
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0;
+      width: calc(100% - 100px);
+
+      p {
+        margin: 6px 0 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+
+      span {
+        font-size: 12px;
+      }
     }
   }
 
@@ -179,8 +298,18 @@
       margin: 0;
     }
 
+    @media (max-width: $mobile) {
+      width: 67px;
+      height: 67px;
+      margin: 0 17px 0 0;
+
+      span {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
   }
-
-
-
 }

@@ -2,7 +2,7 @@
   padding: 14.5rem 0 8rem;
 
   @media (max-width: $tablet) {
-    padding: 70px 0 80px;
+    padding: 98px 0 70px;
   }
 
   &__wrapper {
@@ -23,6 +23,11 @@
     @media (max-width: $tablet) {
       margin: 30px 0 0;
     }
+
+    @media (max-width: $mobile) {
+      margin: 3px 0 0;
+      margin-left: -20px;
+    }
   }
 
   &__content {
@@ -34,6 +39,11 @@
   &__title {
     max-width: 86.7rem;
     margin: 0 0 5.5rem;
+
+    @media (max-width: $mobile) {
+      max-width: 100%;
+      margin: 0 0 11px;
+    }
   }
 
   &__text {
@@ -48,6 +58,10 @@
     @media (max-width: $tablet) {
       font-size: 16px;
       max-width: 100%;
+
+      p {
+        margin: 0 0 20px;
+      }
     }
 
   }

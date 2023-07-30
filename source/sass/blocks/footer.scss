@@ -4,14 +4,27 @@
   background-color: $blue;
   color: $white;
 
+  @media (max-width: $mobile) {
+    padding: 36px 0 53px;
+  }
+
   &__title {
     line-height: 0.95;
     margin: 0 0 6rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 34px;
+      font-size: 45px;
+    }
 
   }
 
   &__left-top {
     margin: 0 0 10.4rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 34px;
+    }
   }
 
   &__policy {
@@ -19,6 +32,19 @@
     opacity: 0.7;
     font-size: 1.8rem;
     line-height: 1.5;
+
+    &--mobile {
+      display: none;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
   }
 
   &__wrapper {
@@ -26,11 +52,21 @@
     z-index: 6;
     display: flex;
     gap: 15.2rem;
+
+    @media (max-width: $mobile) {
+      gap: 0;
+      flex-direction: column
+    }
   }
 
   &__logos {
     display: flex;
     gap: 5.5rem;
+
+    @media (max-width: $mobile) {
+      gap: 25px;
+      width: 88%;
+    }
   }
 
   &__bg {
@@ -46,12 +82,29 @@
       width: 100%;
       height: 100%;
     }
+
+    &--mobile {
+      display: none;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
   }
 
   &__right {
     width: 47.9rem;
     flex-shrink: 0;
     padding-top: 0.8rem;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding-top: 0;
+    }
   }
 
   &__item {
@@ -61,11 +114,24 @@
       margin: 0 0 5.8rem;
     }
 
+    @media (max-width: $mobile) {
+      margin: 0 0 25px;
+
+      &:first-child {
+        margin: 0 0 27px;
+      }
+    }
+
     p {
       font-size: 2rem;
       font-weight: 700;
       line-height: 1.4;
       margin: 0 0 0.7rem;
+
+      @media (max-width: $mobile) {
+        font-size: 20px;
+        margin: 0 0 7px;
+      }
     }
 
     a {
@@ -78,6 +144,11 @@
       &:hover {
         color: $white;
       }
+
+      @media (max-width: $mobile) {
+        font-size: 24px;
+      }
+
     }
   }
 
@@ -86,12 +157,26 @@
     line-height: 1.2;
     max-width: 37rem;
 
+    @media (max-width: $mobile) {
+      font-size: 13px;
+      max-width: 100%;
+    }
+
     ul {
       padding: 0 0 0 2.5rem;
+
+      @media (max-width: $mobile) {
+        padding: 0 0 0 21px;
+        margin: 0 0 30px;
+      }
     }
 
     p {
       margin: 0 0 1.7rem;
+
+      @media (max-width: $mobile) {
+        margin: 0 0 16px;
+      }
     }
   }
 

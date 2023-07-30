@@ -12,10 +12,21 @@
     flex-wrap: nowrap;
     gap: 2rem;
     list-style: none;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__image {
     margin: -10.9rem 0 3rem;
+
+    @media (max-width: $mobile) {
+      margin: -63px 0 15px;
+      width: 51%;
+    }
   }
 
   &__item {
@@ -33,6 +44,18 @@
         max-width: 22.5rem;
       }
     }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-top: 63px;
+      padding: 0 40px 32px;
+
+      &:last-child {
+        .bullits__text {
+          max-width: 100%;
+        }
+      }
+    }
   }
 
   &__subtitle {
@@ -46,6 +69,10 @@
     @media (max-width: $tablet) {
       font-size: 24px;
     }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 8px;
+    }
   }
 
   &__text {
@@ -55,6 +82,11 @@
     @media (max-width: $tablet) {
       font-size: 14px;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+    }
+
   }
 
 }

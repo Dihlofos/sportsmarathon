@@ -3,9 +3,68 @@
   color: $white;
   background-color: $blue;
 
+  @media (max-width: $mobile) {
+    padding: 49px 0 23px;
+  }
+
   &__title {
     margin: 0 0 1rem;
   }
+
+  .slider {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__mobile-list {
+    display: none;
+    flex-wrap: wrap;
+
+    @media (max-width: $mobile) {
+      display: flex;
+
+    }
+  }
+
+  &__mobile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 0 34px;
+
+    h5 {
+      font-size: 32px;
+      font-family: $mossport;
+      text-transform: uppercase;
+      margin: 0 0 3px;
+
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 0;
+    }
+  }
+
+  &__mobile-item-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 0 12px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
 
   &__description {
     font-size: 1.6rem;
@@ -14,6 +73,10 @@
 
     @media (max-width: $tablet) {
       font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 30px;
     }
   }
 

@@ -21,6 +21,11 @@
       padding: 90px 0 60px;
       flex-direction: column;
     }
+
+    @media (max-width: $mobile) {
+      padding: 111px 0 81px;
+      gap: 0;
+    }
   }
 
   &__hundred {
@@ -90,6 +95,11 @@
       max-width: 400px;
       margin-bottom: 30px;
     }
+
+    @media (max-width: $mobile) {
+      margin: 37px 0;
+      font-size: 20px;
+    }
   }
 
   &__link {
@@ -108,6 +118,14 @@
       background-color: $blue;
       color: $white;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      text-align: center;
+      padding: 14px 32px;
+      margin: 0 0 8px;
+
+    }
   }
 
   &__tip {
@@ -116,7 +134,7 @@
     text-align: center;
 
     @media (max-width: $tablet) {
-      text-align: left;
+      font-size: 14px;
     }
   }
 
@@ -128,12 +146,21 @@
     left: 0;
     object-fit: cover;
     z-index: 5;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &__action {
     @media (max-width: $tablet) {
       max-width: 270px;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      margin: 0;
     }
   }
 

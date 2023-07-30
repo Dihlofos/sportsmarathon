@@ -27,6 +27,12 @@
       }
     }
 
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      padding: 11px;
+      height: 45px;
+    }
+
     &--free {
       font-size: 1.8rem;
       background-color: $black;
@@ -52,6 +58,12 @@
 
       @media (max-width: $tablet) {
         font-size: 14px;
+      }
+
+      @media (max-width: $mobile) {
+        padding: 11px;
+        font-size: 16px;
+        height: 43px;
       }
 
     }
