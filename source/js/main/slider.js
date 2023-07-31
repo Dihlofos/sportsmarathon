@@ -60,7 +60,7 @@
 
   const partnersSliderOptions = {
     // Optional parameters
-    loop: true,
+    loop: false,
     slidesPerView: 'auto',
     speed: 1000,
     pagination: {
@@ -89,11 +89,15 @@
   }
 
   function enableSwipers() {
+    const partnersSliderWrapper = document.querySelector(".partners .swiper-wrapper");
     musicSlider = new Swiper(".js-slider-music", membersSliderOptions('music'));
     starSlider = new Swiper(".js-slider-stars", membersSliderOptions('stars'));
 
-    //PARTNERS SLIDER
-    partnerSlier = new Swiper(".partners .js-slider-inner", partnersSliderOptions);
+
+      partnerSlier = new Swiper(".partners .js-slider-inner", partnersSliderOptions);
+
+
+
 
   }
 
