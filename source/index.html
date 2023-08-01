@@ -41,16 +41,31 @@
       property="og:description"
       content="Массовые тренировки соберут тренеров ведущих студий и фитнес-клубов, раскачают всех под взрывные диджей-сеты и подарят атмосферу энергии и драйва. Выбирайте, регистрируйтесь и приходите. Вход бесплатный."
     />
-    <meta property="og:image" content="img/android-chrome-512x512.png" />
+    <meta property="og:image" content="https://marathon.moscow.sport/img/favicons/android-chrome-512x512.png" />
     <meta property="og:url" content="https://marathon.moscow.sport/" />
     <!-- /Meta tags -->
 
     <title>Московский марафон тренировок | Лужники</title>
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(94501086, "init", {
+           clickmap:true,
+           trackLinks:true,
+           accurateTrackBounce:true
+      });
+   </script>
+
   </head>
 
   <body>
-
+    <noscript><div><img src="https://mc.yandex.ru/watch/94501086" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <div style="overflow: hidden">
       <main style="overflow: hidden">
         <nav class="nav nav--mobile js-nav">
@@ -112,8 +127,10 @@
                 </svg>
               </button>
               <div class="header__logos">
-                  <a href="https://www.mos.ru/moskomsport/" target="_blank"><img src="img/logos/dep.svg" width="100" height="34" /></a>
-                  <a href="https://moscow.sport" target="_blank"><img src="img/logos/mossport.svg" width="100" height="30"/></a>
+                  <a href="https://www.mos.ru/moskomsport/" target="_blank">
+                    <img class="header__logo-dep" src="img/logos/dep.svg" width="100" height="34" />
+                </a>
+                  <a href="https://moscow.sport" target="_blank"><img class="header__logo-100" src="img/logos/mossport.svg" width="100" height="30"/></a>
               </div>
 
               <nav class="header__nav nav">

@@ -45,6 +45,15 @@
     }
   }
 
+  &__logo-dep {
+    width: 10rem;
+    height: 3.4rem;
+  }
+
+  &__logo-100 {
+    width: 10rem;
+    height: 3rem;
+  }
   &__action {
     background-color: $blue;
     transition: 0.2s background-color ease-in, 0.2s color ease-in;

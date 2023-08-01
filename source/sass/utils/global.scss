@@ -1,6 +1,10 @@
 html {
   @include font(10px, 10px, 400);
 
+  @media (min-width: 1921px) {
+    @include font(15px, 15px, 400);
+  }
+
   @media (max-width: $desktop) {
     @include font(8px, 8px, 400);
   }
