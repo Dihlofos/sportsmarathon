@@ -60,7 +60,7 @@
 
   const partnersSliderOptions = {
     // Optional parameters
-    loop: false,
+    loop: true,
     slidesPerView: 'auto',
     speed: 1000,
     pagination: {
