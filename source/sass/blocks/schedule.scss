@@ -123,10 +123,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2.2rem;
+    align-items: flex-start;
 
     @media (max-width: $mobile) {
       justify-content: center;
-      align-items: flex-start;
       gap: 35px;
     }
   }
