@@ -15,6 +15,19 @@
 
 "use strict";
 (function () {
+  const dropdowns = document.querySelectorAll(".js-dropdown");
+
+  dropdowns.forEach((dropdown) => {
+    const trigger = dropdown.querySelector(".js-dropdown-trigger");
+
+    trigger.addEventListener("click", () => {
+      dropdown.classList.toggle("open");
+    });
+  });
+})();
+
+"use strict";
+(function () {
   const togglers = document.querySelectorAll(".js-faq-toggler");
   if (!togglers.length) return;
 
@@ -70,32 +83,32 @@
   let musicSlider;
   let starSlider;
   let partnerSlier;
+  let photoSlider;
 
-  const breakpoint = window.matchMedia( '(max-width: 743px)' );
+  const breakpoint = window.matchMedia("(max-width: 743px)");
 
-  const breakpointChecker = function() {
+  const breakpointChecker = function () {
     // if larger viewport and multi-row layout needed
 
-
-    if ( breakpoint.matches === true ) {
-       // clean up old instances and inline styles when available
-       if ( musicSlider !== undefined ) musicSlider.destroy( true, true );
-       if ( starSlider !== undefined ) musicSlider.destroy( true, true );
-       if ( partnerSlier !== undefined ) musicSlider.destroy( true, true );
-       // or/and do nothing
-       return;
-    // else if a small viewport and single column layout needed
-    } else if ( breakpoint.matches === false ) {
-       // fire small viewport version of swiper
-       return enableSwipers();
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (musicSlider !== undefined) musicSlider.destroy(true, true);
+      if (starSlider !== undefined) musicSlider.destroy(true, true);
+      if (partnerSlier !== undefined) musicSlider.destroy(true, true);
+      // or/and do nothing
+      return;
+      // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return enableSwipers();
     }
- };
+  };
 
   const membersSliderOptions = (select) => {
     return {
       // Optional parameters
       loop: true,
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       speed: 1000,
       pagination: {
         el: ".swiper-pagination",
@@ -120,13 +133,13 @@
           spaceBetween: 34,
         },
       },
-    }
-  }
+    };
+  };
 
   const partnersSliderOptions = {
     // Optional parameters
     loop: true,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     speed: 1000,
     pagination: {
       el: ".swiper-pagination",
@@ -151,19 +164,49 @@
         spaceBetween: 18,
       },
     },
-  }
+  };
+
+  const photosSliderOptions = {
+    // Optional parameters
+    loop: false,
+    slidesPerView: "auto",
+    allowTouchMove: false,
+    speed: 1000,
+    navigation: {
+      nextEl: ".photos .swiper__next",
+      prevEl: ".photos .swiper__prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        allowTouchMove: true,
+      },
+
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        allowTouchMove: true,
+      },
+
+      1025: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+    },
+  };
 
   function enableSwipers() {
-    const partnersSliderWrapper = document.querySelector(".partners .swiper-wrapper");
-    musicSlider = new Swiper(".js-slider-music", membersSliderOptions('music'));
-    starSlider = new Swiper(".js-slider-stars", membersSliderOptions('stars'));
-
-
-      partnerSlier = new Swiper(".partners .js-slider-inner", partnersSliderOptions);
-
-
-
-
+    const partnersSliderWrapper = document.querySelector(
+      ".partners .swiper-wrapper"
+    );
+    musicSlider = new Swiper(".js-slider-music", membersSliderOptions("music"));
+    starSlider = new Swiper(".js-slider-stars", membersSliderOptions("stars"));
+    partnerSlier = new Swiper(
+      ".partners .js-slider-inner",
+      partnersSliderOptions
+    );
+    photoSlider = new Swiper(".photos .js-slider-inner", photosSliderOptions);
   }
 
   // keep an eye on viewport size changes
@@ -171,26 +214,24 @@
   // kickstart
   breakpointChecker();
 
-
   if (isTouchDevice()) {
-    const slides = document.querySelectorAll('.js-slider .swiper-slide');
-    slides.forEach((slide)=>{
-      slide.addEventListener('click', ()=>{
-        slide.classList.toggle('hover');
-      })
-    })
-
-} else {
+    const slides = document.querySelectorAll(".js-slider .swiper-slide");
+    slides.forEach((slide) => {
+      slide.addEventListener("click", () => {
+        slide.classList.toggle("hover");
+      });
+    });
+  } else {
     return;
-}
+  }
 
-function isTouchDevice() {
-    return (('ontouchstart' in window) ||
-        (navigator.maxTouchPoints > 0) ||
-        (navigator.msMaxTouchPoints > 0));
-}
-
-
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
 })();
 
 "use strict";
