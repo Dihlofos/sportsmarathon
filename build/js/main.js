@@ -89,12 +89,13 @@
 
   const breakpointChecker = function () {
     // if larger viewport and multi-row layout needed
+    photoSlider = new Swiper(".photos .js-slider-inner", photosSliderOptions);
 
     if (breakpoint.matches === true) {
       // clean up old instances and inline styles when available
       if (musicSlider !== undefined) musicSlider.destroy(true, true);
-      if (starSlider !== undefined) musicSlider.destroy(true, true);
-      if (partnerSlier !== undefined) musicSlider.destroy(true, true);
+      if (starSlider !== undefined) starSlider.destroy(true, true);
+      if (partnerSlier !== undefined) partnerSlier.destroy(true, true);
       // or/and do nothing
       return;
       // else if a small viewport and single column layout needed
@@ -206,7 +207,6 @@
       ".partners .js-slider-inner",
       partnersSliderOptions
     );
-    photoSlider = new Swiper(".photos .js-slider-inner", photosSliderOptions);
   }
 
   // keep an eye on viewport size changes
